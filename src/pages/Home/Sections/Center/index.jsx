@@ -42,7 +42,7 @@ export default function CenterSection() {
     };
 
     return (
-        <div className="w-full h-screen overflow-hidden mb-10 flex items-center justify-center bg-gradient-to-br from-[#0E0E0F] via-[#1A1A1D] to-[#0E0E0F]">
+        <div className="w-full h-screen max-md:h-full mt-10 overflow-hidden mb-10 flex items-center justify-center bg-gradient-to-br from-[#0E0E0F] via-[#1A1A1D] to-[#0E0E0F]">
             {/* Áudios */}
             <audio ref={bgAudioRef} src="/musica-fundo.mp3" />
             <audio ref={urnaAudioRef} src="/urna.mp3" />

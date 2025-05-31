@@ -42,14 +42,14 @@ export default function CenterSection() {
     };
 
     return (
-        <div className="w-full h-screen max-md:h-full mt-10 overflow-hidden mb-10 flex items-center justify-center bg-gradient-to-br from-[#0E0E0F] via-[#1A1A1D] to-[#0E0E0F]">
+        <div className="w-full h-screen max-md:h-auto py-20 flex items-center justify-center">
             {/* Áudios */}
             <audio ref={bgAudioRef} src="/musica-fundo.mp3" />
             <audio ref={urnaAudioRef} src="/urna.mp3" />
 
             {!hasEntered ? (
                 // Tela de entrada
-                <div className="text-white text-center flex flex-col items-center gap-6">
+                <div className="text-white text-center h-screen flex flex-col justify-center items-center gap-6">
                     <h1 className="text-3xl font-bold">Seja bem-vindo(a)!</h1>
                     <button
                         onClick={handleEnter}

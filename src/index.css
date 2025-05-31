@@ -1,1 +1,6 @@
 @import "tailwindcss";
+
+/* Corrige o gradiente de fundo do html */
+html{
+    background: no-repeat linear-gradient(to bottom right, #0E0E0F, #1A1A1D, #0E0E0F);
+}
